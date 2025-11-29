@@ -1,0 +1,142 @@
+{
+  "generated_at": "2025-11-29T14:37:11.939884",
+  "summary": {
+    "total_alerts": 3,
+    "critical_alerts": 2,
+    "high_alerts": 1,
+    "activated_tokens": 3,
+    "total_tokens": 5,
+    "recent_alerts": [
+      {
+        "token_id": "token_7075b81654849eb9",
+        "token_type": "database",
+        "severity": "critical",
+        "message": "Honeytoken 'Po�wiadczenia bazy danych' zosta� aktywowany!",
+        "timestamp": "2025-11-29T14:12:11.252195",
+        "context": {
+          "attack_type": "unauthorized_database_access",
+          "credentials": "dbuser_f609121a0d6b552a:pwd_e1a97d1a3bac59f5",
+          "timestamp": "2025-11-29T14:12:11.252195"
+        }
+      },
+      {
+        "token_id": "token_fdd0a53e4b42ee90",
+        "token_type": "api_key",
+        "severity": "high",
+        "message": "Honeytoken 'Klucz API do serwisu licencyjnego' zosta� aktywowany!",
+        "timestamp": "2025-11-29T14:13:42.512588",
+        "context": {
+          "attack_type": "invalid_api_key",
+          "api_key": "sk_3b0b0035577bbf7e1217e7e2b997853e693f7cc3b53abdbaaf7cbadfc8456b18",
+          "endpoint": "/api/unlock",
+          "timestamp": "2025-11-29T14:13:42.511582"
+        }
+      },
+      {
+        "token_id": "token_51db704d7aa96d5b",
+        "token_type": "credential",
+        "severity": "critical",
+        "message": "Honeytoken 'Fa�szywy klucz odblokowuj�cy' zosta� aktywowany!",
+        "timestamp": "2025-11-29T14:36:57.316230",
+        "context": {
+          "attack_type": "fake_unlock_key_used",
+          "cipher_input": "R6Z_mqiCcZzGScl_0jglNOabQUakSAmrUDTOHKZqmjc",
+          "secret_input": "some_random_secret",
+          "timestamp": "2025-11-29T14:36:57.314704"
+        }
+      }
+    ]
+  },
+  "tokens": [
+    {
+      "token_id": "token_f5f289a07c4c0a7d",
+      "token_type": "http",
+      "value": "http://localhost:8888/api/honeytoken/token_f5f289a07c4c0a7d",
+      "description": "API endpoint do wy�wietlania plik�w",
+      "severity": "high",
+      "created_at": "2025-11-29T14:11:56.256388",
+      "activated": false,
+      "activation_count": 0
+    },
+    {
+      "token_id": "token_00150532a55d2367",
+      "token_type": "dns",
+      "value": "token_00150532a55d2367.honeytoken.local",
+      "description": "Domena command-and-control",
+      "severity": "critical",
+      "created_at": "2025-11-29T14:11:56.270342",
+      "activated": false,
+      "activation_count": 0
+    },
+    {
+      "token_id": "token_7075b81654849eb9",
+      "token_type": "database",
+      "value": "dbuser_f609121a0d6b552a:pwd_e1a97d1a3bac59f5",
+      "description": "Po�wiadczenia bazy danych",
+      "severity": "critical",
+      "created_at": "2025-11-29T14:11:56.275053",
+      "activated": true,
+      "activation_count": 1
+    },
+    {
+      "token_id": "token_fdd0a53e4b42ee90",
+      "token_type": "api_key",
+      "value": "sk_3b0b0035577bbf7e1217e7e2b997853e693f7cc3b53abdbaaf7cbadfc8456b18",
+      "description": "Klucz API do serwisu licencyjnego",
+      "severity": "high",
+      "created_at": "2025-11-29T14:11:56.279671",
+      "activated": true,
+      "activation_count": 1
+    },
+    {
+      "token_id": "token_51db704d7aa96d5b",
+      "token_type": "credential",
+      "value": "R6Z_mqiCcZzGScl_0jglNOabQUakSAmrUDTOHKZqmjc",
+      "description": "Fa�szywy klucz odblokowuj�cy",
+      "severity": "critical",
+      "created_at": "2025-11-29T14:11:56.284330",
+      "activated": true,
+      "activation_count": 1
+    }
+  ],
+  "alerts": [
+    {
+      "token_id": "token_7075b81654849eb9",
+      "token_type": "database",
+      "severity": "critical",
+      "message": "Honeytoken 'Po�wiadczenia bazy danych' zosta� aktywowany!",
+      "timestamp": "2025-11-29T14:12:11.252195",
+      "context": {
+        "attack_type": "unauthorized_database_access",
+        "credentials": "dbuser_f609121a0d6b552a:pwd_e1a97d1a3bac59f5",
+        "timestamp": "2025-11-29T14:12:11.252195"
+      }
+    },
+    {
+      "token_id": "token_fdd0a53e4b42ee90",
+      "token_type": "api_key",
+      "severity": "high",
+      "message": "Honeytoken 'Klucz API do serwisu licencyjnego' zosta� aktywowany!",
+      "timestamp": "2025-11-29T14:13:42.512588",
+      "context": {
+        "attack_type": "invalid_api_key",
+        "api_key": "sk_3b0b0035577bbf7e1217e7e2b997853e693f7cc3b53abdbaaf7cbadfc8456b18",
+        "endpoint": "/api/unlock",
+        "timestamp": "2025-11-29T14:13:42.511582"
+      }
+    },
+    {
+      "token_id": "token_51db704d7aa96d5b",
+      "token_type": "credential",
+      "severity": "critical",
+      "message": "Honeytoken 'Fa�szywy klucz odblokowuj�cy' zosta� aktywowany!",
+      "timestamp": "2025-11-29T14:36:57.316230",
+      "context": {
+        "attack_type": "fake_unlock_key_used",
+        "cipher_input": "R6Z_mqiCcZzGScl_0jglNOabQUakSAmrUDTOHKZqmjc",
+        "secret_input": "some_random_secret",
+        "timestamp": "2025-11-29T14:36:57.314704"
+      }
+    }
+  ]
+}
